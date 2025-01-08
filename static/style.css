@@ -1,0 +1,78 @@
+/* Background with a pastel gradient */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f9e2e7, #f1e3f3, #e2e8f9, #e3f7ed);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Gradient animation */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #333;
+}
+
+/* Make the input labels prettier */
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #5a5a5a;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Pulsating heart image */
+.heart-img {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}

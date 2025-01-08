@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Heart Disease Predictor</h1>
+        <img src="/static/cartoon_heart.png" alt="Cartoon Heart" class="heart-img">
+        <form action="/predict" method="POST" class="form">
+            <label>Age:</label>
+            <input type="number" name="age" required><br>
+
+            <label>Sex (0 = Female, 1 = Male):</label>
+            <input type="number" name="sex" required><br>
+
+            <label>Chest Pain Type:</label>
+            <input type="number" name="chest_pain" required><br>
+
+            <label>Cholesterol:</label>
+            <input type="number" name="cholesterol" required><br>
+
+            <label>Max Heart Rate:</label>
+            <input type="number" name="max_hr" required><br>
+
+            <label>Exercise Induced Angina:</label>
+            <input type="number" name="exercise_angina" required><br>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>

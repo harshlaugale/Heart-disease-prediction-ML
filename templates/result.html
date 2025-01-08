@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .result-text {
+            flex: 1;
+        }
+        .heart-img {
+            max-width: 200px; /* Adjust the size as needed */
+            margin-left: 20px; /* Space between text and image */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="result-text">
+            <h1>Prediction Results</h1>
+            <p>Prediction of Heart Disease: {{ result }}</p>
+            <p>Chosen Model: {{ chosen_model }}</p>
+            <p>Chosen Model Accuracy: {{ chosen_model_acc }}%</p>
+
+            <h2>Model Accuracies</h2>
+            <p>Logistic Regression Accuracy: {{ log_reg_acc }}%</p>
+            <p>Decision Tree Accuracy: {{ dec_tree_acc }}%</p>
+
+            <a href="/">Go Back</a>
+        </div>
+        <img src="/static/cartoon_heart.png" alt="Cartoon Heart" class="heart-img">
+    </div>
+</body>
+</html>
